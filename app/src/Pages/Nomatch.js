@@ -8,7 +8,7 @@ function NoMatch () {
     return (
       <div className="App container">
         <Row>
-          <Col width="col-12">
+          <Col width="col-12 mx-auto">
             <div className="jumbotron">
                 <h1 className="display-4">
                     NO MATCH
