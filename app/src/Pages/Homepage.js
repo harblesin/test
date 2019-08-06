@@ -6,8 +6,10 @@ import Button from "../Components/Button"
 import { Redirect } from "react-router-dom"
 
 class Homepage extends Component {
-    state={
-        redirect: false
+
+    state = {
+        redirect: false,
+        thing: 2
     }
 
     renderRedirect(){
@@ -17,9 +19,10 @@ class Homepage extends Component {
     }
 
     changePage(){
-        this.setState({
-            redirect: true
-        })
+        // this.setState({
+        //     redirect: true
+        // })
+        console.log(this.state.thing)
     }
 
     render(){
@@ -29,9 +32,7 @@ class Homepage extends Component {
                 <Row>
                     <Col width="col-12" className="col-12">
                         <div className="jumbotron shadow-lg mt-4">
-                            <Button onClick={this.changePage}>
-                                
-                            </Button>
+                            <Button onClick={this.changePage}/>
                         </div>
                      
                     </Col>
