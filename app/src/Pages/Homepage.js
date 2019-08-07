@@ -10,7 +10,7 @@ class Homepage extends Component {
     state = {
         redirect: false,
         thing: 2
-    }
+    };
 
     renderRedirect(){
         if(this.state.redirect){
@@ -19,10 +19,11 @@ class Homepage extends Component {
     }
 
     changePage(){
-        // this.setState({
-        //     redirect: true
-        // })
-        console.log(this.state.thing)
+        this.setState({
+            redirect: true
+        })
+        console.log(this)
+        console.log("this thing")
     }
 
     render(){
@@ -32,7 +33,7 @@ class Homepage extends Component {
                 <Row>
                     <Col width="col-12" className="col-12">
                         <div className="jumbotron shadow-lg mt-4">
-                            <Button onClick={this.changePage}/>
+                            <Button changePage={this.changePage}/>
                         </div>
                      
                     </Col>
