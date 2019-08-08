@@ -26,6 +26,9 @@ class Homepage extends Component {
         console.log("this thing")
     }
 
+    logThis(){
+        console.log("this is a test")
+    }
     render(){
         return(
             <div>
@@ -36,6 +39,13 @@ class Homepage extends Component {
                             <Button changePage={this.changePage}/>
                         </div>
                      
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <div className="jumbotron shadow-lg mt-4">
+                        <Button logThis={this.logThis}/>
+                    </div>
                     </Col>
                 </Row>
                 {this.renderRedirect()}
