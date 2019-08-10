@@ -8,13 +8,16 @@ import { Redirect } from "react-router-dom"
 class Homepage extends Component {
 
     state = {
-        redirect: false,
+        redirect: 0,
         thing: 2
     };
 
+    //This needs to be edited, to employ a switch
     renderRedirect(){
-        if(this.state.redirect){
-            return <Redirect to="/Secret"/>
+        if(this.state.redirect>0){
+            return <Redirect to="/side"/>
+        }else if (this.state.redirect>1){
+            return <Redirect to="/secret"/>
         }
     }
 
