@@ -5,7 +5,7 @@ function Button (props){
         <div>
             <label htmlFor="butt">Click this thing please 
             </label>
-            <button className="ml-4 btn-primary shadow"id="butt" onClick={props.changePage}>
+            <button className="ml-4 btn-primary shadow"id="butt" onClick={props.onClick} >
                 Click it.
             </button>
         </div>

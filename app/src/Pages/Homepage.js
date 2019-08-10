@@ -18,7 +18,7 @@ class Homepage extends Component {
         }
     }
 
-    changePage(){
+    changePage = () => {
         this.setState({
             redirect: true
         })
@@ -26,25 +26,28 @@ class Homepage extends Component {
         console.log("this thing")
     }
 
-    logThis(){
+    logThis = () => {
         console.log("this is a test")
+        var that = this.state.thing
+        console.log(that)
     }
+
     render(){
         return(
             <div>
                 <Navbar/>
                 <Row>
-                    <Col width="col-12" className="col-12">
+                    <Col width="col-12">
                         <div className="jumbotron shadow-lg mt-4">
-                            <Button changePage={this.changePage}/>
+                        <Button onClick={this.changePage}/>
                         </div>
                      
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Col width="col-12">
                     <div className="jumbotron shadow-lg mt-4">
-                        <Button logThis={this.logThis}/>
+                        <Button onClick={this.logThis}/>
                     </div>
                     </Col>
                 </Row>
