@@ -6,7 +6,7 @@ function Button (props){
             <label htmlFor="butt">Click this thing please 
             </label>
             <button className="ml-4 btn-primary shadow"id="butt" onClick={props.onClick} >
-                Click it.
+                Click me.
             </button>
         </div>
     )
