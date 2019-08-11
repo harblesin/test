@@ -2,7 +2,7 @@ const db = require("../models");
 
 module.exports = {
     findAll: function (req,res){
-        db.User.findAll().then((data)=>{
+        db.User.find().then((data)=>{
             res.send(data)
         }).catch((err)=>res.send(err))
     },
@@ -16,5 +16,9 @@ module.exports = {
 
     loginUser: function(req,res){
         
+    },
+
+    removeUser: function(req,res){
+
     }
 }

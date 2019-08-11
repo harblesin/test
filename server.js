@@ -16,5 +16,5 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/test", {
 })
 
 app.listen(PORT, function(){
-	console.log(`࿊ ==> API Server now listening on port ${port}!`)
+	console.log(`࿊ ==> API Server now listening on port ${PORT}!`)
 })
