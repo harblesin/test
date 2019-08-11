@@ -15,7 +15,7 @@ module.exports = {
     },
 
     loginUser: function(req,res){
-        
+        passport.authenticate()
     },
 
     removeUser: function(req,res){
