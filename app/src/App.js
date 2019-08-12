@@ -4,6 +4,7 @@ import Homepage from "./Pages/Homepage";
 import Secretpage from "./Pages/Secretpage";
 import Sidepage from "./Pages/Sidepage";
 import Nomatch from "./Pages/Nomatch";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route exact path="/side" component={Sidepage} />
           <Route exact path="/secret" component={Secretpage} />
+          <Route exact path="/login" component={Login} />
           <Route component={Nomatch} />
         </Switch>
       </Router>
