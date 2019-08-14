@@ -2,13 +2,19 @@ import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 
 class Navbar extends Component {
-  state = {};
+  state = {
+    redirect: false
+  };
 
-  //Doesn't perform correctly
   option = event => {
     event.preventDefault();
-    // alert("this thing is working");
-    return <Redirect to="/login" />;
+    this.setState({ redirect: true });
+  };
+
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to="/login" />;
+    }
   };
   render() {
     return (
@@ -55,6 +61,7 @@ class Navbar extends Component {
             </button>
           </div>
         </nav>
+        {this.renderRedirect()}
       </div>
     );
   }
