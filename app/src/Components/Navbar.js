@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 class Navbar extends Component {
   state = {};
 
+  //Doesn't perform correctly
   option = event => {
     event.preventDefault();
     // alert("this thing is working");
@@ -46,16 +47,12 @@ class Navbar extends Component {
                 </a>
               </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
-              <a href="/login">
-                <button
-                  className="btn btn-outline-success my-2 my-sm-0"
-                  onClick={this.option}
-                >
-                  {this.props.status}
-                </button>
-              </a>
-            </form>
+            <button
+              className="btn btn-outline-success my-2 my-sm-0"
+              onClick={this.option}
+            >
+              {this.props.status}
+            </button>
           </div>
         </nav>
       </div>
