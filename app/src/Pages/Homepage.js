@@ -14,10 +14,12 @@ class Homepage extends Component {
 
   //This needs to be edited, to employ a switch
   renderRedirect() {
-    if (this.state.redirect > 0) {
-      return <Redirect to="/side" />;
-    } else if (this.state.redirect > 1) {
-      return <Redirect to="/secret" />;
+    switch (this.state.redirect) {
+      case 1:
+        return <Redirect to="/side" />;
+      case 2:
+        return <Redirect to="/secret" />;
+      default:
     }
   }
 
@@ -25,8 +27,6 @@ class Homepage extends Component {
     this.setState({
       redirect: true
     });
-    console.log(this);
-    console.log("this thing");
   };
 
   changeStatus = event => {
