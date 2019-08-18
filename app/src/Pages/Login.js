@@ -10,9 +10,17 @@ import API from "../";
 class Login extends Component {
   state = {
     redirect: 0,
-    status: "Sign In"
+    status: "Sign In",
+    userName: "",
+    password: ""
   };
 
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
   //This needs to be edited, to employ a switch
   renderRedirect() {
     if (this.state.redirect > 0) {
@@ -37,8 +45,8 @@ class Login extends Component {
         <Row>
           <Col width="col-12">
             <div className="jumbotron shadow-lg mt-4">
-              <Form />
-              <Form />
+              <Form name="userName" />
+              <Form name="password" />
               <Button onClick={this.changePage} />
             </div>
           </Col>
