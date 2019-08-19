@@ -45,9 +45,27 @@ class Login extends Component {
         <Row>
           <Col width="col-12">
             <div className="jumbotron shadow-lg mt-4">
-              <Form name="userName" />
-              <Form name="password" />
-              <Button onClick={this.changePage} />
+              <Row>
+                <Col width="mx-auto col-4">
+                  <label forHtml="userName">Username</label>
+                  <Form
+                    margin="mb-2"
+                    placeholder="Username"
+                    name="userName"
+                    handleInputChange={this.handleInputChange}
+                  />
+                  <label forHtml="password">Password</label>
+                  <Form
+                    name="password"
+                    placeholder="Password"
+                    handleInputChange={this.handleInputChange}
+                  />
+                  <Button onClick={this.changePage} />
+                  <a href="/register">
+                    Don't Have an Account with us? Create one here!
+                  </a>
+                </Col>
+              </Row>
             </div>
           </Col>
         </Row>

@@ -10,6 +10,6 @@ export default {
   },
 
   createUser: function(user) {
-    return axios.get("/api/user", user);
+    return axios.post("/api/user", user);
   }
 };

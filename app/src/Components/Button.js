@@ -3,13 +3,12 @@ import React from "react";
 function Button(props) {
   return (
     <div>
-      <label htmlFor="butt">Click this thing please</label>
       <button
-        className="ml-4 btn-primary shadow"
+        className=" mt-3 rounded btn-primary shadow"
         id="butt"
         onClick={props.onClick}
       >
-        Click me.
+        Sign In
       </button>
     </div>
   );

@@ -1,9 +1,14 @@
 import React from "react";
 
-function Form() {
+function Form(props) {
   return (
     <div>
-      <input placeholder="Hey there" />
+      <input
+        className={props.margin}
+        placeholder={props.placeholder}
+        name={props.name}
+        handleInputChange={props.handleInputChange}
+      />
     </div>
   );
 }
