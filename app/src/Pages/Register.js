@@ -54,12 +54,12 @@ class Login extends Component {
         <Row>
           <Col width="col-12">
             <Row>
-              <Col>
+              <Col width="mx-auto col-2 mt-4">
                 <h1>Register here!</h1>
               </Col>
             </Row>
             <Row>
-              <Col width="mx-auto col-4">
+              <Col width="mx-auto col-2">
                 <label forHtml="userName">Username</label>
                 <Form
                   margin="mb-2"
