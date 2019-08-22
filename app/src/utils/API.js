@@ -12,6 +12,7 @@ export default {
   createUser: function(user) {
     return axios.post("/api/user", user);
   },
+  
   deleteUser: function(user) {
     return axios.delete("/api/user", user)
   }
