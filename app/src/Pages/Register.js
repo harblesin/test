@@ -11,6 +11,7 @@ class Login extends Component {
   state = {
     redirect: 0,
     status: "Sign In",
+    statusIn: "Sign Out",
     userName: "",
     password: ""
   };
