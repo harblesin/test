@@ -9,7 +9,8 @@ import API from "../";
 class Homepage extends Component {
   state = {
     redirect: 0,
-    status: "Sign In"
+    status: "Sign In",
+    signOut: "Sign Out"
   };
 
   //This needs to be edited, to employ a switch
