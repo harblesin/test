@@ -6,7 +6,6 @@ import Navbar from "../Components/Navbar";
 class Homepage extends Component {
   state = {
     status: "Sign In",
-    signOut: "Sign Out"
   };
 
   render() {
