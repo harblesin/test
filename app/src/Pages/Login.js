@@ -22,6 +22,7 @@ class Login extends Component {
     });
   };
   //This needs to be edited, to employ a switch
+  //////////////////////////////////////////////
   renderRedirect() {
     if (this.state.redirect > 0) {
       return <Redirect to="/side" />;
