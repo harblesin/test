@@ -13,7 +13,6 @@ class Homepage extends Component {
     signOut: "Sign Out"
   };
 
-  //This needs to be edited, to employ a switch
   renderRedirect() {
     switch (this.state.redirect) {
       case 1:
