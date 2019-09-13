@@ -23,6 +23,7 @@ class Homepage extends Component {
     }
   }
 
+  //Unapologetic comment
   changePage = () => {
     this.setState({
       redirect: true
